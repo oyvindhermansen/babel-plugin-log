@@ -1,0 +1,22 @@
+{
+  "version": "0.0.0",
+  "description": "",
+  "author": "Øyvind Hermansen <oyvindher@gmail.com>",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-env": "^1.6.0",
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "babel src -d lib",
+    "test": "mocha --compilers js:babel-register",
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "babel-plugin"
+  ],
+  "dependencies": {}
+}
