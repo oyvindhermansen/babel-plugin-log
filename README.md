@@ -10,13 +10,13 @@ For the lazy people who's tired of writing out 'console' for every log they want
 **In**
 
 ```js
-log('hello world);
+log('hello world');
 ```
 
 **Out**
 
 ```js
-console.log('hello world);
+console.log('hello world');
 ```
 
 ## Usage
