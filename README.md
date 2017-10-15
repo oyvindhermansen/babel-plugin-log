@@ -23,10 +23,8 @@ console.log('hello world');
 
 ### Via `.babelrc` (Recommended)
 
-**.babelrc**
-
 ```json
 {
   "plugins": ["log"]
 }
-```# babel-plugin-log
+```
