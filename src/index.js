@@ -2,7 +2,8 @@ export default function({ types: t }) {
   return {
     visitor: {
       Identifier(path) {
-        const isLogStatement = path.node.name === 'log';
+        const isLogStatement =
+          path.node.name === 'log' && path.parent.type === 'CallExpression';
 
         if (!isLogStatement) return;
 
